@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBook</title>
+    <link rel="icon" type="image/x-icon" href="Group (1).png">
+    <style>
+        #box{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            width: 28vw;
+            height: 36vw;
+            border: 2px solid black;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 10vw; 
+            /* fill: radial-gradient(153.31% 162.18% at -12.15% 20.98%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.19) 94.84%, rgba(218, 214, 214, 0.30) 100%);
+            stroke-width: 1px;
+            stroke: #6393EB;
+            filter: drop-shadow(10px 10px 20px rgba(104, 101, 101, 0.20)) drop-shadow(-10px -10px 20px rgba(150, 150, 150, 0.25)); */
+        }
+        img{
+            width: 4vw;
+            height: 4vw;
+            margin-left: 20px;
+            margin-right: 2vw;
+        }
+        h1{
+            margin-top: 10px;
+            width:20vw;
+        }
+        #log{
+            display: flex;
+            flex-direction: row;
+            float: left;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24vw;
+            height: 3vw;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+            background-color:#DFDBDB;
+        }
+        input::placeholder{
+            text-align: center;
+            margin:auto;
+            font-size: large;
+        }
+        button
+        {
+            /* width: 7vw;
+            height: 3vw;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: #6393EB;
+            color: rgb(255, 255, 255);
+            margin-left:10.3vw; */
+            background-color: transparent;
+            border: 0px solid transparent;
+        }
+        #inc{
+            display: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            opacity: 1;
+            margin-left: 20px;
+            color: red;
+            margin-bottom: -20px;
+        }
+        #onk{
+            display: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            opacity: 1;
+            margin-left: 20px;
+            color: red;
+            margin-bottom: -20px;
+        }
+        input:last-child{
+            width: 7vw;
+            height: 3vw;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: #6393EB;
+            color: rgb(255, 255, 255);
+            margin-left:9vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="log">
+            <img src="Group 1.png" alt="">
+            <h1>Join Our Library</h1>
+        </div>
+            <form action="/log" method="post">
+                <input type="text"  name="name1" placeholder="FirstName"  class="koo">
+                <input type="text"  name="name2" placeholder="LastName" required class="koo">
+                <input type="text" name="email" placeholder="Email" required class="koo">
+                <input type="text" name="phone" placeholder="Phone Number" required class="koo" >
+                <input type="password" name="pass" placeholder="Password" required class="koo">
+                <h2 id="inc">Incorrect Email Provided</h2>
+                <h2 id="onk">Email Id already Registered</h2>
+                <!-- <button type="submit">Signup</button> -->
+                <button><input type="submit" placeholder="submit"></button>
+            </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBook</title>
+    <link rel="icon" type="image/x-icon" href="Group (1).png">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            background-color: rgb(255, 255, 255);
+        }
+        .bo
+        {
+            display: flex;
+            margin: auto;
+            font-size: 2.4rem;
+        }
+        .hea
+        {
+            display: flex;
+        }
+        button[type="submit"]
+        {
+            margin-top: 5px;
+            margin-right: 30px;
+            cursor: pointer;
+            width: 7vw;
+            height: 3vw;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+        }
+        #hee
+        {
+            display: flex;
+            justify-content: center;
+            margin-right: 30px;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .head{
+            width: 7vw;
+            height: 5vh;
+            margin-right: 5vw;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #FFFF;
+            /* font-family: 'Baloo 2', cursive; */
+            /* font-family: 'Kaisei Decol', serif; */
+            font-family: 'helvetica neue';
+            font-size: 1rem;
+            /* font-family: 'Lato', sans-serif; */
+        }
+        .fll{
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        #ima{
+            width: 36vw;
+            height: 36vw;
+            float: left;
+        }
+        #iii{
+            width: 36vw;
+            height: 35vw;
+            margin-left: -20vw;
+        }
+        h2{
+            display: flex;
+            font-size: 4vw;
+            font-family: 'Kaisei Decol', serif;
+            margin: auto;
+            margin-bottom: 0px;
+            justify-content: center;
+        }
+        #book{
+            margin: auto;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        #h2bo{
+            font-size: 3rem;
+            margin-left: 0px;
+        }
+        p{
+            font-size: 25px;
+            overflow: hidden;
+        }
+        #jee{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            margin-left: -40px;
+            justify-content: center;
+            margin-top: 6vw;
+        }
+        .cla{
+            display: flex;
+            flex-direction:column;
+            width: 20vw;
+            height: 60vh;
+            margin-right: 90px;
+            margin-top: -30px;
+            border-radius: 30px;
+            background: radial-gradient(116.07% 137.46% at 10.83% 6.95%, #FFF 0%, #FFF 0%, rgba(255, 255, 255, 0.03) 97.40%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: -8px -8px 5px 0px #FFD6E8 inset;
+        }
+        .cla:last-child{
+            margin-right: 0px;
+        }
+        .blue
+        {
+            width: 30vw;
+            height: 30vw;
+            margin-top: 50px;
+            margin-left: -120px;
+            overflow: hidden;
+            /* margin-right: -120px; */
+        }
+        #blueid
+        {
+            z-index: -1;
+            overflow: hidden;
+            background-color: transparent;
+        }
+        .jee2{
+            margin: auto;
+            margin-left: 8vw;
+            width: 20vw;
+            font-size: 30px;
+        }
+        .jee1{
+            margin-left: 15px;
+            width: 17vw;
+            font-size: 14px;
+        }
+        #vector{
+            width: 30vw;
+            height: 30vw;
+            margin-left: -14vw;
+            margin-top: 50px;
+        }
+        #jk{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        hr{
+            margin-bottom: 30px;
+        }
+        .read{
+            margin: auto;
+            width: 20vw;
+            background-color: transparent;
+            border: 0px solid transparent;
+            font-size: large;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        #circ{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            background-color: #FFD6E8;
+            border-radius: 100px;
+            animation: ball 1s linear 1s infinite  alternate;
+            margin-bottom: 40px;
+        }
+        @keyframes ball{
+            0%{
+                margin-top: 20px;
+            }
+            10%{
+                margin-top: 40px;
+            }
+            20%{
+                margin-top: 60px;
+            }
+            30%{
+                margin-top: 80px;
+                margin-left: 20px;
+            }
+        }
+        .cont{
+            display: flex;
+            position: sticky;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        #blobs{
+            float: left;
+            margin-left: -15vw;
+        }
+        #spon{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 3vw;
+        }
+        #osp{
+            display: flex;
+            content: " ";
+            left: 20px;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .img1{
+            width: 10vw;
+            height: 10vw;
+            margin: auto;
+            margin-left: -1px;
+            margin-top: -1px;
+            border-radius: 20vw;
+        }
+        .img1:hover{
+            transform: scale(1.3);
+        }
+        .img2
+        {
+            width: 9.5vw;
+            height: 7vw;
+            margin: auto;
+            margin-left: 1.5px;
+            margin-top: 20px;
+            border-radius: 20vw;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+        .img3{
+            width: 8vw;
+            height: 6vw;
+            margin: auto;
+            margin-left: 13px;
+            margin-top: 25px;
+            border-radius: 0vw;
+        }
+        .img3:hover{
+            transform: scale(1.1);
+        }
+        .comp{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid black;
+            border-radius: 20vw;
+            color: #FFD6E8;
+            margin: auto;
+        }
+        #box{
+            width: 12vw;
+            height: 12vh;
+            border: 2px solid black;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        #h113{
+            background-color: #2a2a2a;
+            color: rgb(247, 247, 247);
+        }
+        #h113 a{
+            color: #FFFF;
+        }
+        h2{
+            align-items: center;
+            margin: auto;
+            margin-top: 15vw;
+        }
+        #lofl{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+        #mainlo
+        {
+            width: 4vw;
+            height: 4vw;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hea">
+        <div id="lofl">
+            <img src="Group 2 (2).png" alt="logo" id="mainlo">
+            <h1 class="bo">WeBook</h1>
+        </div>
+        <form action="/login" method="post">
+            <% if(c==0) { %>
+                <button type="submit" class="sub">Login</button>
+            <% } %>
+            <% if(c==1) { %>
+                <button type="submit" id="logio">
+                    <img src="Vector (3).png" alt="sorry" id="imga">
+                </button>
+            <% } %>
+        </form>
+    </div>
+    <hr>
+    <div id="hee">
+        <form action="/">
+            <button class="head">Home</button>
+        </form>
+        <button class="head">Content</button>
+        <form action="/contact">
+            <button class="head" id="h113">Contact Us</button>
+        </form>
+        <form action="/about" method="post">
+            <button class="head" id="h114">About us</button>
+        </form>
+    </div>
+    <h2>Under Construction</h2>
+</body>
+</html>

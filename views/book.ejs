@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Kaisei+Decol:wght@500&family=Lato&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" type="image/x-icon" href="Group (1).png">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            background-color: rgb(255, 255, 255);
+        }
+        #mainlo{
+            width: 4vw;
+            height: 4vw;
+            margin-right: 20px;
+        }
+        .bo
+        {
+            display: flex;
+            margin: auto;
+            font-size: 2.4rem;
+        }
+        .hea
+        {
+            display: flex;
+        }
+        .sub
+        {
+            margin-top: 5px;
+            margin-right: 30px;
+            cursor: pointer;
+            width: 7vw;
+            height: 3vw;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+        }
+        #hee
+        {
+            display: flex;
+            justify-content: center;
+            margin-right: 30px;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .head{
+            width: 7vw;
+            height: 5vh;
+            margin-right: 5vw;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #FFFF;
+            /* font-family: 'Baloo 2', cursive; */
+            /* font-family: 'Kaisei Decol', serif; */
+            font-family: 'helvetica neue';
+            font-size: 1rem;
+            /* font-family: 'Lato', sans-serif; */
+        }
+        .fll{
+            display: flex;
+            flex-direction: row;
+            /* overflow: hidden; */
+        }
+        #ima{
+            width: 36vw;
+            height: 36vw;
+            float: left;
+        }
+        h2
+        {
+            display: flex;
+            font-size: 4vw;
+            font-family: 'Kaisei Decol', serif;
+            margin: auto;
+            margin-bottom: 0px;
+            justify-content: center;
+        }
+        #iii
+        {
+            width: 26vw;
+            height: 25vw;
+            margin-top:  6vw;
+            margin-left: -17vw;
+        }
+        #book{
+            margin: auto;
+            display: flex;
+            overflow: hidden;
+            flex-direction: row;
+            float: right;
+        }
+        #h2bo{
+            font-size: 3rem;
+            margin-left: 0px;
+        }
+        p{
+            font-size: 25px;
+            overflow: hidden;
+        }
+        #jee{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            margin-left: -40px;
+            justify-content: center;
+            margin-top: 6vw;
+        }
+        .cla{
+            display: flex;
+            flex-direction:column;
+            width: 20vw;
+            height: 60vh;
+            margin-right: 90px;
+            margin-top: -30px;
+            border-radius: 30px;
+            background: radial-gradient(116.07% 137.46% at 10.83% 6.95%, #FFF 0%, #FFF 0%, rgba(255, 255, 255, 0.03) 97.40%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: -8px -8px 5px 0px #FFD6E8 inset;
+        }
+        .cla:last-child{
+            margin-right: 0px;
+        }
+        .blue
+        {
+            width: 30vw;
+            height: 30vw;
+            margin-top: 50px;
+            margin-left: -120px;
+            overflow: hidden;
+            /* margin-right: -120px; */
+        }
+        #blueid
+        {
+            z-index: -1;
+            overflow: hidden;
+            background-color: transparent;
+        }
+        .jee2{
+            margin: auto;
+            margin-left: 8vw;
+            width: 20vw;
+            font-size: 30px;
+        }
+        .jee1{
+            margin-left: 15px;
+            width: 17vw;
+            font-size: 14px;
+        }
+        #vector{
+            width: 30vw;
+            height: 30vw;
+            margin-left: -14vw;
+            margin-top: 50px;
+        }
+        #jk{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        hr{
+            margin-bottom: 30px;
+        }
+        .read{
+            margin: auto;
+            width: 20vw;
+            background-color: transparent;
+            border: 0px solid transparent;
+            font-size: large;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        #circ{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            background-color: #FFD6E8;
+            border-radius: 100px;
+            animation: ball 1s linear 1s infinite  alternate;
+            margin-bottom: 40px;
+        }
+        @keyframes ball{
+            0%{
+                margin-left: 0vw;
+                /* margin-top: 20px; */
+            }
+            10%{
+                margin-left: 5vw;
+                /* margin-top: 40px; */
+            }
+            30%{
+                margin-left: 10vw;
+                /* margin-top: -0.3vw; */
+            }
+            50%{
+                margin-left: 15vw;
+                /* margin-top: -0.1vw; */
+            }
+            70%{
+                margin-left: 20vw;
+                /* margin-top: -0.5vw; */
+            }
+            90%{
+                margin-left: 25vw;
+                /* margin-top: 120px; */
+            }
+            100%{
+                margin-left: 30vw;
+                /* margin-top: 120px; */
+            }
+        }
+        .cont{
+            display: flex;
+            position: sticky;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        #blobs{
+            float: left;
+            margin-left: -14vw;
+        }
+        #spon{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 3vw;
+        }
+        #osp{
+            display: flex;
+            content: " ";
+            left: 20px;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .img1{
+            width: 10vw;
+            height: 10vw;
+            margin: auto;
+            margin-left: -1px;
+            margin-top: -1px;
+            border-radius: 20vw;
+        }
+        .img1:hover{
+            transform: scale(1.3);
+        }
+        .img2
+        {
+            width: 9.5vw;
+            height: 7vw;
+            margin: auto;
+            margin-left: 1.5px;
+            margin-top: 20px;
+            border-radius: 20vw;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+        .img3{
+            width: 8vw;
+            height: 6vw;
+            margin: auto;
+            margin-left: 13px;
+            margin-top: 25px;
+            border-radius: 0vw;
+        }
+        .img3:hover{
+            transform: scale(1.1);
+        }
+        .comp{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid black;
+            border-radius: 20vw;
+            color: #FFD6E8;
+            margin: auto;
+        }
+        #box{
+            width: 12vw;
+            height: 12vh;
+            border: 2px solid black;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #h111{
+            background-color: #2a2a2a;
+            color: white;
+        }
+        #lofl{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+        #cii{
+            margin: auto;
+            display: flex;
+            position: absolute;
+            width: 15vw;
+            height: 15vw;
+            border: 1px solid black;
+            border-radius: 20vw;
+            background: rgba(196, 196, 196, 0.10);
+            box-shadow: -59px 59px 59px 0px rgba(255, 255, 255, 0.10) inset, 59px -59px 59px 0px rgba(149, 149, 149, 0.10) inset;
+            backdrop-filter: blur(4px);
+            margin-right: 20px;
+            margin-top:13vw;
+            margin-left: 0px;
+            animation: ball 5s linear 1s infinite alternate;
+            transition: 2s ease-in;
+            transform: translate(120deg);
+        }
+        #imga{
+            width: 3vw;
+            height: 3.1vw;
+        }
+        #logio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3.2vw;
+            height: 3.2vw;
+            margin-right: 20px;
+            border-radius: 40px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="/login" method="post">
+        <div id="box">
+
+        </div>
+    </form> -->
+    <div class="hea">
+        <div id="lofl">
+            <img src="Group 2 (2).png" alt="logo" id="mainlo">
+            <h1 class="bo">WeBook</h1>
+        </div>
+        <form action="/signup" method="post">
+            <% if(c==0) { %>
+                <button type="submit" class="sub">Login</button>
+            <% } %>
+            <% if(c==1) { %>
+                <button type="submit" id="logio">
+                    <img src="Vector (3).png" alt="sorry" id="imga">
+                </button>
+            <% } %>
+        </form>
+    </div>
+    <hr>
+    <div id="hee">
+        <button class="head" id="h111" type="button">Home</button>
+        <button class="head" id="h112">Content</button>
+        <form action="/contact" method="get">
+            <button class="head" id="h113" type="submit">
+                Contact Us
+            </button>
+        </form>
+        <form action="/about" method="post">
+            <button class="head" id="h114" type="submit">About us</button>
+        </form>
+    </div>
+    <div class="fll">
+        <div id="blobs">
+            <img src="blob (4).svg" alt="" id="ima">
+            <img src="Group (1).png" alt="" id="iii">
+        </div>
+        <div id="cii"></div>
+        <div id="book">
+            <div id="lko">
+                <h2 id="h2bo">WeBook</h2>
+                <p>Search it Find it Use it</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="jk">
+        <img src="Vector.jpg" alt="" id="vector">
+        <div id="jee">
+            <div class="cla">
+                <h1 class="jee2">JEE</h1>
+                <p class="jee1">Joint Entrance Examination - Advanced (JEE-Advanced), formerly the Indian Institutes of Technology-Joint Entrance Examination (IIT-JEE), is an academic examination held annually in India. It is organized by one of the seven "old" IITs (IIT Roorkee, IIT Kharagpur, IIT Delhi, IIT Kanpur, IIT Bombay, IIT Madras, and IIT Guwahati)[3] under the guidance of the Joint Admission Board (JAB). It is the sole prerequisite for admission to the Indian Institutes of Technology. Other universities—such as the Indian Institute of Petroleum and Energy (IIPE), the Rajiv Gandhi Institute of Petroleum Technology, the Indian Institute of Space Technology (IIST), the Indian Institute of Science Education and Research (IISERs), and the Indian Institute of Science (IISc) — use the score obtained on the JEE-Advanced exam as the basis for admission......... 
+                </p>
+                <button class="read">Read More..</button>
+            </div>
+            <div class="cla">
+                <h1 class="jee2">NEET</h1>
+                <P class="jee1">Joint Entrance Examination - Advanced (JEE-Advanced), formerly the Indian Institutes of Technology-Joint Entrance Examination (IIT-JEE), is an academic examination held annually in India. It is organized by one of the seven "old" IITs (IIT Roorkee, IIT Kharagpur, IIT Delhi, IIT Kanpur, IIT Bombay, IIT Madras, and IIT Guwahati)[3] under the guidance of the Joint Admission Board (JAB). It is the sole prerequisite for admission to the Indian Institutes of Technology. Other universities—such as the Indian Institute of Petroleum and Energy (IIPE), the Rajiv Gandhi Institute of Petroleum Technology, the Indian Institute of Space Technology (IIST), the Indian Institute of Science Education and Research (IISERs), and the Indian Institute of Science (IISc) — use the score obtained on the JEE-Advanced exam as the basis for admission.........
+                </P>
+                <button class="read">Read More..</button>
+            </div>
+            <div class="cla">
+                <h1 class="jee2">UPSC</h1>
+                <P class="jee1">Joint Entrance Examination - Advanced (JEE-Advanced), formerly the Indian Institutes of Technology-Joint Entrance Examination (IIT-JEE), is an academic examination held annually in India. It is organized by one of the seven "old" IITs (IIT Roorkee, IIT Kharagpur, IIT Delhi, IIT Kanpur, IIT Bombay, IIT Madras, and IIT Guwahati)[3] under the guidance of the Joint Admission Board (JAB). It is the sole prerequisite for admission to the Indian Institutes of Technology. Other universities—such as the Indian Institute of Petroleum and Energy (IIPE), the Rajiv Gandhi Institute of Petroleum Technology, the Indian Institute of Space Technology (IIST), the Indian Institute of Science Education and Research (IISERs), and the Indian Institute of Science (IISc) — use the score obtained on the JEE-Advanced exam as the basis for admission....... 
+                </P>
+                <button class="read">Read More..</button>
+            </div>
+        </div>
+        <span id="blueid">
+            <img src="Vector (1).jpg" alt="sorry" class="blue">
+        </span>
+    </div>
+    <hr>
+    <!-- <div id="circ"></div>
+    <img src="Group 3.png" alt="" class="cont"> -->
+    <section>
+        <h3 id="osp">Our Sponsors</h3>
+        <div id="spon">
+            <div class="comp"><img src="7611770.png" alt="" class="img1"></div>
+            <div class="comp"><img src="AMZN-e9f942e4.png" alt="" class="img3"></div>
+            <div class="comp"><img src="Flipkart-Emblem.png" alt="" class="img2"></div>
+            <div class="comp"><img src="60950bab53a8bf00040ff343.png" alt="" class="img3"></div>
+            <div class="comp"><img src="1.jpg" alt="" class="img2"></div>
+            <!-- <lottie-player src="https://app.lottiefiles.com/animation/84c39b15-6670-453b-a3c4-4ccfab7c00df" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
+        </div>
+    </section>
+    <hr>
+</body>
+</html>
